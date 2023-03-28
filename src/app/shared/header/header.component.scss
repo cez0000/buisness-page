@@ -1,0 +1,39 @@
+.nav {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background-color: rgb(153, 48, 205);
+    z-index: 2;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    a {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: black;
+        text-decoration: none;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    a:hover {
+        background-color: rgb(128, 40, 173);
+    }
+
+   
+}
+
+a.active:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}

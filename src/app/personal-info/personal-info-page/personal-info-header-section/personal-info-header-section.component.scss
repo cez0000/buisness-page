@@ -1,0 +1,37 @@
+.business-card {
+height: 80vh;
+background-color: rgb(157, 127, 249);
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+overflow: hidden;
+
+}
+
+.welcome-text {
+    h1 {
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.left-info {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.me-img {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.go-to {
+    margin-top: 100px;
+    text-decoration: underline;
+     div {
+        cursor: pointer;
+     }
+}

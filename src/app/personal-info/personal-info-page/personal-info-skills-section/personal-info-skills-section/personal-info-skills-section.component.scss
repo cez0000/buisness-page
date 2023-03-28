@@ -1,0 +1,79 @@
+.skills-container {
+    height: 80vh;
+}
+
+.slide {
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .content-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: 1s;
+        .slide-content {
+            position: relative;
+           width: 800px;
+           max-width: 800px;
+           padding: 10px;
+            .text {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .image-wrapper {
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 200px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+.animative-left {
+    transform: translateX(-50%);
+}
+
+.animative-right {
+    transform: translateX(50%);
+}
+
+.arrow-right {
+   width: 40px;
+   padding: 5px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+   cursor: pointer;
+   z-index: 2;
+}
+.arrow-left {
+    width: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow-hover {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+}

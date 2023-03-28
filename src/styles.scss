@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+html  {
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
