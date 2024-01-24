@@ -1,0 +1,66 @@
+.content-wrapper {
+    height: 700px;
+    margin: 0 auto;
+   
+    .about-me-text {
+        font-size: 20px;
+    }
+}
+.monitor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:75vw;
+  max-width: 900px;
+  height: 500px;
+  overflow-y:scroll;
+  border: solid 1em #1d1d1d;
+  border-radius:.5em;
+  }
+  .monitor::-webkit-scrollbar {
+        width: 15px;
+  }
+  .monitor::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+  ::-webkit-scrollbar-track {
+        background-color: #888;
+  }
+  .stand:before {
+    content:"";
+    display:block;
+    position:relative;
+    background: #222;
+    width: 150px;
+    height: 50px;
+    top:550px;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .stand:after {
+     content:"";
+     display:block;
+     position:relative;
+     background:#1d1d1d;
+     border-top-left-radius:.5em;
+     border-top-right-radius:.5em;
+     width: 300px;
+     height: 15px;
+     top: 50px;
+     left: 50%;
+     transform: translateX(-50%);
+  }
+  .hobbie-item {
+    border: 1px solid rgb(130, 130, 130);
+    padding: 10px 10px 50px 10px;
+    border-radius:5px ;
+    margin-bottom: 50px;
+    .mountains-img {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 420px;
+        height: 300px;
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+<div #skillsWrapper class="skills-container pt-4 pb-4">
+    <h1 style="color: white; font-weight: bold;" class="text-center mb-5">{{"My Skills and projects" | uppercase}}</h1>
+    <div class="sub-container d-flex justify-content-around">
+        <div> 
+            <div class="skills-slider">
+                <div class="slide">
+                    <div *ngIf="slides && arrayForSlideDots.length > 0" class="slider-dots">
+                        <ng-container *ngFor="let item of arrayForSlideDots">
+                            <div [ngStyle]="{'background-color': getStyleCondition(item) ? 'black': null}"></div>
+                        </ng-container>
+                    </div>
+                    <div appHoverHighlight="arrow-hover" (click)="moveLeft()" class="arrow-left"><img src="../../../../../assets/img/arrow-left.svg" alt=""></div>
+                    <div appHoverHighlight="arrow-hover" (click)="moveRight()" class="arrow-right"><img src="../../../../../assets/img/arrow-right.svg" alt=""></div>
+                    <div #contentWrapper class="content-wrapper d-flex">
+                        <div #slides id="angular" class="slide-content">
+                            <div class="image-wrapper">
+                             <app-skill-logo [logoSrc]="'../../../../assets/3Dmodels/correctedlogoangular.glb'"></app-skill-logo>
+                            </div>
+                            <div class="text d-flex justify-content-between">Angular <span (click)="openInfoPopup(0)"><img src="../../../../assets/img/circle-info-solid.svg" alt=""></span></div>
+                        </div>
+                        <div #slides id="react" class="slide-content">
+                            <div class="image-wrapper">
+                                <app-skill-logo [logoSrc]="'../../../../assets/3Dmodels/react_logo.glb'"></app-skill-logo>
+                            </div>
+                            <div class="text d-flex justify-content-between">React <span (click)="openInfoPopup(1)"><img src="../../../../assets/img/circle-info-solid.svg" alt=""></span></div>
+                        </div>
+                        <div #slides id="dotnet" class="slide-content">
+                            <div class="image-wrapper">
+                            <app-skill-logo [logoSrc]="'../../../../assets/3Dmodels/correctednet4.glb'"></app-skill-logo>
+                            </div>
+                            <div class="text d-flex justify-content-between">.NET <span (click)="openInfoPopup(2)"><img src="../../../../assets/img/circle-info-solid.svg" alt=""></span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div></div>
+        <div> 
+           <app-project-reference-widget
+           [currentSkill]="currentSkill"
+           >
+           </app-project-reference-widget>
+        </div>
+    </div>
+   
+   
+</div>

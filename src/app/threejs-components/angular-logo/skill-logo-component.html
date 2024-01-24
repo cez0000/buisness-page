@@ -1,0 +1,24 @@
+
+<th-canvas #canvas (onRender)="onBeforeRender()">
+    <th-scene #scene>
+        <th-object3D #model
+        [name]="'logo'"
+        [castShadow]="true"
+        [rotation]="rotation"
+        [position]="position"
+        loadGLTF
+        [url]="glbPath"
+      
+        >
+          </th-object3D>
+          
+          <th-ambientLight> </th-ambientLight>
+          <th-perspectiveCamera  #camera
+           [args]="[45, 2, 0.1, 100]"
+          [position]="[7.8, 3.4, 13]"
+          [lookAt]="[0, 0, 0]">
+          <th-arcballControls></th-arcballControls>
+          </th-perspectiveCamera>
+          
+    </th-scene>
+  </th-canvas>

@@ -1,6 +1,6 @@
 .business-card {
-height: 80vh;
-background-color: rgb(157, 127, 249);
+height: 700px;
+background-color: transparent;
 border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
 overflow: hidden;
@@ -9,6 +9,8 @@ overflow: hidden;
 
 .welcome-text {
     h1 {
+        font-size: 40px;
+        font-weight: 600;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
     }
@@ -16,10 +18,10 @@ overflow: hidden;
 
 .left-info {
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 100px;
+   margin-left: 100px;
     margin-top: 30px;
 }
 
@@ -30,8 +32,63 @@ overflow: hidden;
 }
 .go-to {
     margin-top: 100px;
-    text-decoration: underline;
      div {
         cursor: pointer;
+          span {
+            overflow: hidden;
+            position: relative;
+          }
+          span:hover::before {
+            top:100%;
+            animation: naviline-animation 0.2s ease-in;
+            content: '';
+            width: 100%;
+            position: absolute;
+            background-color: white;
+            height: 5px;
+         }
+     }
+    
+     
+    
+}
+
+@keyframes naviline-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.cube-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.socials-icons {
+    width: 170px;
+    border: 1px solid white;
+    box-shadow: 2px 3px 24px 0px rgb(237, 238, 240);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 0 1 auto;
+    img {
+        cursor: pointer
+    }
+     img:hover {
+        animation: shakeAnimation 0.5s ease-in-out infinite;
      }
 }
+@keyframes shakeAnimation {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+  

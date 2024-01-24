@@ -1,5 +1,13 @@
-<app-header></app-header>
+
 <div class="personal-info-container">
- <app-personal-info-header-section (goToEmitter)="goToSection(1)"></app-personal-info-header-section>
- <app-personal-info-skills-section #personalSkills ></app-personal-info-skills-section>
+ <app-personal-info-header-section (goToEmitter)="goToSection($event)"></app-personal-info-header-section>
+ <app-personal-info-about-me #comp></app-personal-info-about-me>
+ <app-personal-info-skills-section #comp ></app-personal-info-skills-section>
+ <app-personal-info-contact-form #comp></app-personal-info-contact-form>
+ <div style="height: 100px; line-height: 100px; border-top: 1px solid white" class="text-center">© 2023 Cezary Kwiatek</div>
 </div>
+<div *ngIf="showScrollButton" class="go-back-arrow-wrapper">
+    <img (click)="scrollToTop()" src="../../../assets/img/arrow-up-solid.svg" alt="arr-up">
+</div>
+<app-menu-hamburger (goToEmmiter)="goToSection($event)"></app-menu-hamburger>
+

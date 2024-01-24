@@ -1,19 +1,39 @@
 <div class="row">
+   
     <div class="col-xs-12 business-card position-relative">
+        <div class="cube-wrapper">
+            <div>
+                <video #video autoplay loop muted plays-inline>
+                    <source src="../../../../assets/img/background.mp4" type="video/mp4">
+                  </video>
+        </div>
+        </div>
         <div class="text-center welcome-text mt-5">
             <h1>Welcome to my page!</h1>
         </div>
-        <div class="d-flex flex-column justify-content-around mt-5">
-         <div class="left-info info">
-            <div>My name is Cezary Kwiatek</div>
-            <div>I'm Pro Code Developer</div>
-         </div>
-         <div class="left-info go-to">
-            <div (click)="goToSkills()">Go to Skills</div>
-            <div>Go to Hobbies</div>
-            <div>Go to Contact</div>
-         </div>
-         <img class="me-img" src="../../../../assets/img/ja.png-removebg-preview.png" alt="me">
+        <div class="row header-wrapper">
+            <div class="col-5 flex-column justify-content-around mt-5 personal-details">
+                <div class="left-info info">
+                   <div class="mb-3">My name is Cezary Kwiatek</div>
+                   <div>I'm Full-Stack Developer</div>
+                </div>
+                <div *ngIf="showMainPhoto" class="left-info go-to">
+                   <div class="mb-3" (click)="goToEmitter.emit(0)" ><span>Go to About me</span></div>
+                   <div class="mb-3" (click)="goToEmitter.emit(1)"><span>Go to Skills and Projects</span></div>
+                   <div class="mb-3" (click)="goToEmitter.emit(2)"><span>Go to Contact</span></div>
+                </div>       
+                <img *ngIf="showMainPhoto" class="me-img" src="../../../../assets/img/ja.png-removebg-preview.png" alt="me">
+               </div>
+               <div class="col-2 align-self-end d-flex justify-content-center social-icons-wrapper">
+                <div class="socials-icons d-flex justify-content-around">
+                    <a href="https://www.facebook.com/czarek.kwiatek.1"><img src="../../../../assets/img/icons8-facebook.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/cezary-kwiatek-75ba96245/"><img src="../../../../assets/img/icons8-linkedin.svg" alt=""></a>
+                </div>                
+            </div>
         </div>
+       
+      
     </div>
+   
+    
 </div>

@@ -1,0 +1,49 @@
+.content-wrapper-contact {
+    height: 500px;
+    width: 75vw;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    box-shadow: 2px 3px 24px 0px rgb(237, 238, 240);
+    padding: 20px;
+    border-radius: 10px;
+      .form-element {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+          input {
+            transition: .2s;
+            outline: none !important;
+            color: white;
+            background-color: transparent !important;
+            border: none !important;
+            border-radius: 2px;
+            border-bottom: 1px solid white !important;
+          }
+          input:focus {
+            background-color: rgb(70, 70, 70) !important;
+          }
+          textarea:focus {
+            background-color: rgb(70, 70, 70) !important;
+          }
+          textarea {
+            transition: .2s;
+            border-radius: 2px;
+            outline: none !important;
+            color: white;
+            background-color: transparent !important;
+            border: none !important;
+            border-bottom: 1px solid white !important;
+          }
+      }
+
+      .send-icon {
+        height: 50px;
+        width: 80px;
+        cursor: pointer;
+        transition: .2s;
+      }
+      .send-icon:hover {
+        filter: drop-shadow( 1px 1px 1px rgba(255, 255, 255, 0.7));
+      }
+}

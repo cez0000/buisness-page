@@ -1,0 +1,124 @@
+.skills-container {
+    background-color: rgb(53, 53, 53);
+    margin-bottom: 100px;
+    position: relative;
+}
+
+
+
+.slide {
+    height: 430px;
+    width: 42vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 3px 24px 0px rgb(237, 238, 240);
+    border-radius: 10px;
+
+    .content-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        transition: 1s;
+        .slide-content {
+            position: relative;
+           width: 42vw;
+           padding: 10px;
+            .text {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+                span {
+                    margin-left: 10px;
+                    transform: translateY(-15%);
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                }
+            }
+            .image-wrapper {
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 200px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+.animative-left {
+    transform: translateX(-50%);
+}
+
+.animative-right {
+    transform: translateX(50%);
+}
+
+.arrow-right {
+   width: 40px;
+   padding: 5px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 7px;
+   cursor: pointer;
+   z-index: 2;
+}
+.arrow-left {
+    width: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow-hover {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
+.slider-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    display: flex;
+       div {
+        width: 13px;
+        height: 13px;
+        background-color: rgb(170, 167, 167);
+        margin-right: 3px;
+        border-radius: 50%;
+       }
+}
+
+.example-title {
+    transform: translateY(-30px);
+    
+}
+.pro-wrapper {
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgb(237, 238, 240);
+    border-radius: 10px;
+    .project-img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    
+}

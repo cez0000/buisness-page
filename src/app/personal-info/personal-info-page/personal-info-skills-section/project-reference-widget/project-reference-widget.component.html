@@ -1,0 +1,17 @@
+<div class="project-ref-wrapper d-flex position-relative">
+    <h3 class="position-absolute ref-text">Reference project: {{currentProject.name}}</h3>
+    <img 
+    [style.width]="currentProject.relatedSkill === skills.Net ? '20%' : null"
+    [style.transform]="currentProject.relatedSkill === skills.Net ? 'translate(50%)' : null"
+     [src]="getSrc(currentProject.relatedSkill)" class="img-wrapper">
+    <div class="project-info d-flex flex-column">
+        <span>{{currentProject.info[0]}}</span>
+        <span>{{currentProject.info[1]}}</span>
+        <span>{{currentProject.info[2]}}</span>
+        <div class="d-flex icons">
+         <img src="../../../../../assets/img/github.svg" alt="check repo">
+         <a [href]="currentProject.webURL"><img src="../../../../../assets/img/world-wide-web.svg" alt="visit"></a>
+        </div>
+    </div>
+
+</div>

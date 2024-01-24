@@ -1,0 +1,13 @@
+<div [ngClass]="isExpanded && 'openContent'" class="menu-hamburger-content-wrapper">
+<div class="menu-hamburger-icon-wrapper" (click)="showMenu()">
+<div [ngClass]="isExpanded && 'openOne'" class="one"></div>
+<div class="two" *ngIf="!isExpanded"></div>
+<div [ngClass]="isExpanded && 'openTwo'" class="three"></div>
+</div>
+
+<div class="menu-column d-flex flex-column justify-content-around">
+    <div (click)="goToEmmiter.emit(0); isExpanded = !isExpanded">About Me</div>
+    <div (click)="goToEmmiter.emit(1); isExpanded = !isExpanded">Skills and Projects</div>
+    <div (click)="goToEmmiter.emit(2); isExpanded = !isExpanded">Contact</div>
+</div>
+</div>

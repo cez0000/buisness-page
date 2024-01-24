@@ -1,0 +1,26 @@
+<h1 style="color: white; font-weight: bold;" class="text-center mt-4">{{"About me" | uppercase}}</h1>
+<div #contentWrapper class="content-wrapper pt-4 d-flex justify-content-center">
+    <div [ngClass]="(isMonitor$ | async) && 'stand'">
+        <div class="monitor">
+            <div class="monitor-content p-4">
+                <div class="mb-5 fs-5">{{aboutMeInfo}}<hr></div>
+                <div class="hobbies-list">
+                    <div class="hobbie-item d-flex flex-column align-items-center">
+                        <h3>Hiking</h3>
+                        <div class="mountains-img mt-4"><img src="../../../../assets/img/mountains.jpg" alt=""></div>
+                    </div>
+                    <div class="hobbie-item d-flex flex-column align-items-center">
+                        <h3>Chess</h3>
+                        <div class="mountains-img mt-4"><img src="../../../../assets/img/chess].jpeg" alt=""></div>
+                    </div>
+                    <div class="hobbie-item d-flex flex-column align-items-center">
+                        <h3>Electric Guitar</h3>
+                        <div class="mountains-img mt-4"><img src="../../../../assets/img/guitar.jpg" alt=""></div>
+                    </div>
+                </div>
+               
+                </div>
+           
+        </div>
+    </div>
+</div>

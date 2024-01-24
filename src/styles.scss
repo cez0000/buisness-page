@@ -1,14 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/dist/css/bootstrap.css";
 html  {
     width: 100%;
+    height: 100%;
+    overflow-y: visible !important;
+    
 }
 body {
     width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: rgb(53, 53, 53) !important;
     overflow-x: hidden;
+    color: white;
 }
+@media screen and (max-width: 1200px)  {
+    .sub-container {
+        flex-direction: column !important;
+        align-items: center;
+     
+    }
+    .left-info {
+        font-size: 22px !important;
+       }
+       .me-img {
+        width: 40%;
+       }
+   
+    .skills-slider {
+        margin-bottom: 20px;
+    }
+    
+    .slide {
+        width: 75vw !important;
+    }
+    .slide-content {
+        width: 75vw !important;
+    }
+    .project-ref-wrapper {
+        width: 75vw !important;
+    }
+    .content-wrapper-contact {
+        width: 75vw !important;
+    }
+   
+}
+@media screen and (max-width: 900px)  {
+    .sub-container {
+        flex-direction: column !important;
+        align-items: center;
+     
+    }
+    .skills-slider {
+        margin-bottom: 20px;
+    }
+    .project-ref-wrapper {
+       flex-direction: column;
+       justify-content: center !important;
+       align-items: center;
+        .img-wrapper {
+           align-self: center !important;
+           margin-top: 50px !important;
+           transform: translate(0%) !important;
+           margin-bottom: 5px !important;
+        }
+   }
+    
+   .left-info {
+    margin-left: 0px !important;
+    text-align: center;
+    margin-bottom: 100px;
+   }
+   .personal-details {
+    width: auto !important;
+   }
+
+   .header-wrapper {
+    flex-direction: column;
+   }
+   .social-icons-wrapper {
+    align-self: center !important;
+    margin-top: 50px;
+   }
+   .ref-text {
+    top: 2%;
+    font-size: 20px;
+   }
+   .content-wrapper-contact {
+    padding: 15px 0 !important;
+     .form-element {
+        width: 90% !important;
+     }
+   }
+   canvas {
+    height: 300px !important;
+   }
+}
+

@@ -1,0 +1,18 @@
+<h1 style="color: white; font-weight: bold;" class="text-center mb-5 mt-4">{{"Contact" | uppercase}}</h1>
+<div #contentWrapper class="content-wrapper-contact pt-4 row justify-content-around">
+    <form [formGroup]="contactForm">
+        <div class="d-flex flex-column form-element">
+            <label for="name">Name:</label>
+            <input id="name" type="text" formControlName="name">
+        </div>
+        <div class="d-flex flex-column form-element">
+            <label for="email">Email:</label>
+            <input id="email" type="text" formControlName="email">
+        </div>
+        <div class="d-flex flex-column form-element">
+            <label for="message">Message:</label>
+            <textarea rows="8" id="message" type="text" formControlName="message"></textarea>
+        </div>
+    </form>
+    <img (click)="sendEmail()" class="send-icon" src="../../../../assets/img/send.svg">
+</div>

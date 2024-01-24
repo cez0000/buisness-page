@@ -2,3 +2,13 @@
     width: 100vw;
     margin:  auto;
 }
+.go-back-arrow-wrapper {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    pointer-events:all;
+     img {
+        width: 40px;
+        cursor: pointer;
+     }
+}

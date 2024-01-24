@@ -1,0 +1,18 @@
+
+        <th-canvas #canvas (onRender)="onBeforeRender()">
+            <th-scene>
+                <th-object3D #model
+                [castShadow]="true"
+                [rotation]="rotation"
+                [position]="position"
+                loadGLTF
+                [url]="glbPath"
+                >
+                  </th-object3D>
+                  
+                  <th-ambientLight> </th-ambientLight>
+                  <th-perspectiveCamera  #camera [args]="[45, 2, 0.1, 100]" [position]="[13, 13, 13]" [lookAt]="[0, 0, 0]">
+                    <th-orbitControls/>
+                  </th-perspectiveCamera>
+            </th-scene>
+          </th-canvas>
