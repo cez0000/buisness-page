@@ -16,11 +16,18 @@ constructor(private fb: FormBuilder, private toastRService: ToastrService) {
 }
 public contactForm = this.fb.group({
   name: ['', Validators.required],
-  email: ['', Validators.required],
+  email: ['', [Validators.required, Validators.email]],
   message: ['', Validators.required]
 })
 
 public sendEmail() {
+  if(this.contactForm.invalid) {
+    if(!!Object.values(this.contactForm.controls).find(c => c.errors && c.errors['required']))
+       this.toastRService.error('All fields are required')
+    else
+       this.toastRService.error('Email is invalid')
+    return
+  }
   from(emailjs.send("service_9a7k1hb","template_utaoogd",{
     from_name: this.contactForm.get('email').value,
     to_name: "Cezary",

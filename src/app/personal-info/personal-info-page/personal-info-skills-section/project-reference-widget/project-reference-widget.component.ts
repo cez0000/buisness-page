@@ -24,11 +24,11 @@ public skills = Skills;
  public getSrc(skill: Skills) {
   switch(skill) {
     case Skills.Angular:
-      return '../../../../../assets/img/screen1.jpg'
+      return 'https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/screen1.jpg'
     case Skills.React:
-      return '../../../../../assets/img/reactappscreen.jpg'
+      return 'https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/reactappscreen.jpg'
     case Skills.Net:
-      return '../../../../../assets/img/ddnet.jpg'
+      return 'https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/ddnet.jpg'
   }
  }
 }
