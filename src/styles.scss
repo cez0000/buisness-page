@@ -47,6 +47,46 @@ body {
     }
    
 }
+@media screen and (max-width: 700px) {
+    .about-me-info {
+        padding: 5px;
+        font-size: 15px !important;
+    }
+    .monitor {
+        width: 85vw !important;
+        overflow-x: hidden;
+        border: solid 10px #1d1d1d !important;
+    }
+    .mountains-img {
+        img {
+          width: 250px !important;
+          height: 165px !important;
+        }
+      }
+      .content-wrapper-contact {
+        padding: 15px 0 !important;
+        width: 85vw !important;
+         .form-element {
+            width: 90% !important;
+         }
+         .send-icon {
+            height: 37.2px !important;
+            width: 60px !important;
+          }
+       }
+       .slide {
+        width: 85vw !important;
+    }
+    .slide-content {
+        width: 85vw !important;
+    }
+    .project-ref-wrapper {
+        width: 85vw !important;
+    }
+    .content-wrapper-contact {
+        width: 85vw !important;
+    }
+}
 @media screen and (max-width: 900px)  {
     .sub-container {
         flex-direction: column !important;

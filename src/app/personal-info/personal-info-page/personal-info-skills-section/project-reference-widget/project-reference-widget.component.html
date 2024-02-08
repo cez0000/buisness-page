@@ -3,7 +3,9 @@
     <img 
     [style.width]="currentProject.relatedSkill === skills.Net ? '20%' : null"
     [style.transform]="currentProject.relatedSkill === skills.Net ? 'translate(50%)' : null"
-     [src]="getSrc(currentProject.relatedSkill)" class="img-wrapper">
+     [src]="getSrc(currentProject.relatedSkill)" class="img-wrapper"
+     (click)="showImage(currentProject.relatedSkill)"
+     >
     <div class="project-info d-flex flex-column">
         <span>{{currentProject.info[0]}}</span>
         <span>{{currentProject.info[1]}}</span>

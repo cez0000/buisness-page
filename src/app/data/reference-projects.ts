@@ -8,7 +8,7 @@ export const REFERENCE_PROJECTS: ReferenceProjectModel[] = [
         relatedSkill: Skills.Angular,
         info:['Preparing and displaying recipes', 'Using Firebase API to store data', 'Including rxjs operators'],
         imgUrl: 'src/assets/img/screen1.jpg',
-        webURL: 'https://cez0000.github.io/recipe-book-auth/auth',
+        webURL: 'https://cez0000.github.io/recipe-book-auth/',
         gitHubUrl: 'https://github.com/cez0000/recipe-book-auth',
     },
     {
