@@ -96,9 +96,9 @@ body {
     .skills-slider {
         margin-bottom: 20px;
     }
-    .project-ref-wrapper {
+    #ref-wrapper {
        flex-direction: column;
-       justify-content: center !important;
+       justify-content: center;
        align-items: center;
         .img-wrapper {
            align-self: center !important;

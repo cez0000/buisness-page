@@ -5,6 +5,7 @@ import { ReferenceProjectModel } from 'src/app/models/reference-project.model';
 import { Dialog } from '@angular/cdk/dialog';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ImageShowUpComponent } from 'src/app/shared/components/image-show-up/image-show-up.component';
+import { BreakPointObserverService } from 'src/app/services/breakpoint-observer.service';
 
 @Component({
   selector: 'app-project-reference-widget',
@@ -20,7 +21,8 @@ public projectName: string = '';
 private projects: ReferenceProjectModel[] = REFERENCE_PROJECTS;
 public currentProject:ReferenceProjectModel = REFERENCE_PROJECTS[0];
 public skills = Skills;
-constructor(private dialog: MatDialog) {
+
+constructor(private dialog: MatDialog, public bpObserverService: BreakPointObserverService) {
 
 }
  ngOnChanges(changes: SimpleChanges): void {

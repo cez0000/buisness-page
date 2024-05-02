@@ -33,4 +33,11 @@
         }
     }
 }
+@media screen and (max-width: 415px) {
+    .image-wrapper {
+        img.pro-img {
+            height: 27% !important;
+        }
+    }
+}
 

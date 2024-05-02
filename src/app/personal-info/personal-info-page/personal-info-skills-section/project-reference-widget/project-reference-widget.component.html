@@ -1,4 +1,4 @@
-<div class="project-ref-wrapper d-flex position-relative">
+<div id="ref-wrapper" [ngStyle]="isComercial && {'justify-content': 'start'}" class="project-ref-wrapper d-flex position-relative">
   <h3 class="position-absolute ref-text">
     {{getTitle}}
   </h3>
@@ -34,7 +34,7 @@
   </div>
   </ng-container>
   <ng-container *ngIf="isComercial"> 
-    <div style="font-size: 20px; padding: 20px;" class="mt-5">
+    <div [ngStyle]="bpObserverService.showContentForLarge$.getValue() && {'font-size': '20px'}" class="mt-5">
         {{currentProjectComercial?.info?.[0]}}
     </div>
     
