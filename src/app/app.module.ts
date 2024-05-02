@@ -19,6 +19,10 @@ import { PersonalInfoAboutMeComponent } from './personal-info/personal-info-page
 import { ProjectReferenceWidgetComponent } from './personal-info/personal-info-page/personal-info-skills-section/project-reference-widget/project-reference-widget.component';
 import { PersonalInfoContactFormComponent } from './personal-info/personal-info-page/personal-info-contact-form/personal-info-contact-form.component';
 import { MenuHamburgerComponent } from './shared/components/menu-hamburger/menu-hamburger.component';
+import { PersonalInfoComercialProjectsComponent } from './personal-info/personal-info-page/personal-info-comercial-projects/personal-info-comercial-projects.component';
+import { CustomSlideComponent } from './shared/components/custom-slide-component/custom-slide.component';
+import { ImageModalDirective } from './shared/Directives/app-image-modal.directive';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { MenuHamburgerComponent } from './shared/components/menu-hamburger/menu-
     SkillLogoComponent,
     ProjectReferenceWidgetComponent,
     PersonalInfoContactFormComponent,
-    MenuHamburgerComponent
+    MenuHamburgerComponent,
+    PersonalInfoComercialProjectsComponent,
+    CustomSlideComponent,
+    ImageModalDirective
+   
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,8 @@ import { MenuHamburgerComponent } from './shared/components/menu-hamburger/menu-
     NgxThreeModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    MatDialogModule
+    MatDialogModule,
+   
   ],
   providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackDrop: false}}],
   bootstrap: [AppComponent],

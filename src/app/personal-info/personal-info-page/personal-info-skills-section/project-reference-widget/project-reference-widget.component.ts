@@ -13,6 +13,8 @@ import { ImageShowUpComponent } from 'src/app/shared/components/image-show-up/im
 })
 export class ProjectReferenceWidgetComponent implements OnChanges {
 @Input() currentSkill: Skills = Skills.Angular;
+@Input() currentProjectComercial;
+@Input() isComercial: boolean = false;
 public imgSrc: string = '../../../../../assets/img/screen1.jpg';
 public projectName: string = '';
 private projects: ReferenceProjectModel[] = REFERENCE_PROJECTS;
@@ -22,7 +24,7 @@ constructor(private dialog: MatDialog) {
 
 }
  ngOnChanges(changes: SimpleChanges): void {
-   if(Object.values(Skills).includes(changes['currentSkill'].currentValue))
+   if(!this.isComercial && Object.values(Skills).includes(changes['currentSkill']?.currentValue))
      this.currentProject = this.projects.find(p => p.relatedSkill === this.currentSkill);
  }
 
@@ -32,6 +34,10 @@ constructor(private dialog: MatDialog) {
     }
   this.dialog.open(ImageShowUpComponent, {data})
 
+ }
+
+ public get getTitle() {
+  return !this.isComercial ? `Reference project: ${this.currentProject.name}` : 'My Role in project:'
  }
 
  public getSrc(skill: Skills) {

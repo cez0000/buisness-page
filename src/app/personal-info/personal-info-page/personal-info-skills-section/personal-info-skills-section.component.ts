@@ -114,8 +114,6 @@ export class PersonalInfoSkillsSectionComponent
   }
 
   private setElementWidth(): void {
-    console.log(this.slides.first.nativeElement.offsetWidth);
-    
     this.elementWidth = this.slides.first.nativeElement.offsetWidth;
   }
 

@@ -1,13 +1,13 @@
-<div class="row">
+<div style="box-shadow: 2px 9px 15px -8px rgba(66, 68, 90, 1);" class="row">
    
     <div class="col-xs-12 business-card position-relative">
-        <div class="cube-wrapper">
+        <!-- <div class="cube-wrapper">
             <div>
                 <video #video autoplay loop muted plays-inline>
                     <source src="https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/background.mp4" type="video/mp4">
                   </video>
         </div>
-        </div>
+        </div> -->
         <div class="text-center welcome-text mt-5">
             <h1>Welcome to my page!</h1>
         </div>
@@ -20,7 +20,8 @@
                 <div *ngIf="showMainPhoto" class="left-info go-to">
                    <div class="mb-3" (click)="goToEmitter.emit(0)" ><span>Go to About me</span></div>
                    <div class="mb-3" (click)="goToEmitter.emit(1)"><span>Go to Skills and Projects</span></div>
-                   <div class="mb-3" (click)="goToEmitter.emit(2)"><span>Go to Contact</span></div>
+                   <div class="mb-3" (click)="goToEmitter.emit(2)"><span>Go to Comercial Projects</span></div>
+                   <div class="mb-3" (click)="goToEmitter.emit(3)"><span>Go to Contact</span></div>
                 </div>       
                 <img *ngIf="showMainPhoto" class="me-img" src="https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/ja.png-removebg-preview.png" alt="me">
                </div>
@@ -28,6 +29,7 @@
                 <div class="socials-icons d-flex justify-content-around">
                     <a href="https://www.facebook.com/czarek.kwiatek.1"><img src="https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/icons8-facebook.svg" alt=""></a>
                     <a href="https://www.linkedin.com/in/cezary-kwiatek-75ba96245/"><img src="https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/icons8-linkedin.svg" alt=""></a>
+                    <a href="https://github.com/cez0000"><img style="width:50px; height: 50px;" src="https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/github.svg" alt=""></a>
                 </div>                
             </div>
         </div>

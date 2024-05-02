@@ -1,0 +1,13 @@
+<div *ngIf="slideData" #slide [id]="slideData.title" class="slide-content">
+    <div class="image-wrapper">
+      <div class="text d-flex justify-content-between">
+        {{slideData.title}}
+        <span (click)="openInfoPopup()"
+          ><img
+            [src]="slideData.imgSrc"
+            alt=""
+        /></span>
+      </div>
+    </div>
+   
+  </div>

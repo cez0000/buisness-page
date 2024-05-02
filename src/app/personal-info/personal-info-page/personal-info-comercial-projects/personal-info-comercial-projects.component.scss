@@ -1,0 +1,36 @@
+.image-wrapper {
+    img.pro-img {
+        align-self: flex-start;
+        border-radius: 10px;
+        height: 70% !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-right: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-wrapper {
+        img.pro-img {
+            height: 65% !important;
+        }
+    }
+}
+@media screen and (max-width: 610px) {
+    .image-wrapper {
+        img.pro-img {
+            height: 50% !important;
+        }
+    }
+}
+@media screen and (max-width: 510px) {
+    .image-wrapper {
+        img.pro-img {
+            height: 38% !important;
+        }
+    }
+}
+

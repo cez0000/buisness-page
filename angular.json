@@ -32,7 +32,9 @@
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/particles.js/particles.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,7 +103,9 @@
               "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/particles.js/particles.js"
+            ]
           }
         }
       }

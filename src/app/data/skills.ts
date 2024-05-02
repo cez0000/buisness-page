@@ -15,6 +15,6 @@ export const SKILLS: SkillsModel[] = [
     {
       name: '.NET',
       id: Skills.Net,
-      info: 'is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform[5] successor to .NET Framework. The project is mainly developed by Microsoft employees by way of the .NET Foundation and is released under an MIT License'
+      info: 'is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework. The project is mainly developed by Microsoft employees by way of the .NET Foundation and is released under an MIT License'
     }
 ]

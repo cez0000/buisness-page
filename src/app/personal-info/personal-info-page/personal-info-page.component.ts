@@ -1,7 +1,8 @@
 import { Component, OnInit, QueryList, ViewChild, ViewChildren, HostListener } from '@angular/core';
 import { PersonalInfoSkillsSectionComponent } from './personal-info-skills-section/personal-info-skills-section.component';
 import { BreakPointObserverService } from 'src/app/services/breakpoint-observer.service';
-
+import { ParticlesConfig } from '../../../../particles-config';
+declare let particlesJS: any;
 @Component({
   selector: 'app-personal-info-page',
   templateUrl: './personal-info-page.component.html',
@@ -20,6 +21,11 @@ onWindowScroll() {
 }
   ngOnInit(): void {
     this.breakpointObserverService.initSubscriptions(); 
+    this.invokeParticles()
+  }
+  
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
   }
 
   public get showMenuHamburger(): boolean {

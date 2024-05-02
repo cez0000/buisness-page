@@ -1,7 +1,7 @@
 .skills-container {
-    background-color: rgb(53, 53, 53);
     margin-bottom: 100px;
     position: relative;
+    color: white;
 }
 
 
@@ -46,7 +46,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    height: 200px;
+                    height: 240px;
                 }
             }
         }
@@ -100,7 +100,7 @@
        div {
         width: 13px;
         height: 13px;
-        background-color: rgb(170, 167, 167);
+        background-color: rgb(129, 129, 129);
         margin-right: 3px;
         border-radius: 50%;
        }
@@ -121,4 +121,10 @@
         
     }
     
+}
+.logo-model {
+    cursor: grab;
+}
+.logo-model:active {
+    cursor: grabbing;
 }
