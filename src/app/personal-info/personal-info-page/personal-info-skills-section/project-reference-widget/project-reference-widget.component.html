@@ -34,7 +34,7 @@
   </div>
   </ng-container>
   <ng-container *ngIf="isComercial"> 
-    <div [ngStyle]="bpObserverService.showContentForLarge$.getValue() && {'font-size': '20px'}" class="mt-5">
+    <div [ngStyle]="bpObserverService.showContentForLarge$.getValue() && {'font-size': '20px'}" class="mt-5" style="padding-right: 30px;">
         {{currentProjectComercial?.info?.[0]}}
     </div>
     
