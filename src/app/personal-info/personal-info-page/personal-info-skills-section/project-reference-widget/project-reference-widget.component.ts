@@ -45,7 +45,7 @@ constructor(private dialog: MatDialog, public bpObserverService: BreakPointObser
  public getSrc(skill: Skills) {
   switch(skill) {
     case Skills.Angular:
-      return 'https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/screen1.jpg'
+      return '../../../../../assets/img/ang-pro.jpg'
     case Skills.React:
       return 'https://raw.githubusercontent.com/cez0000/buisness-page/master/src/assets/img/reactappscreen.jpg'
     case Skills.Net:
